@@ -7,7 +7,7 @@ const infoEl = document.querySelector("#song-info");
 const containerEl = document.querySelector("#main-container");
 
 const player = new Player({
-    app: { token: "14gvJVMxNmJMxKdM" },
+    app: { token: "GYNK2L33H7hndhfs" },
     mediaElement: document.querySelector("#media")
 });
 

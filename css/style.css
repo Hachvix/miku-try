@@ -1,0 +1,57 @@
+/* Paleta de colores: Azules profundos y verde agua */
+body {
+    margin: 0;
+    background: radial-gradient(circle, #0a1f33 0%, #010409 100%);
+    color: #39C5BB;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#main-container {
+    text-align: center;
+    z-index: 10;
+    transition: transform 0.1s ease-out;
+}
+
+#lyrics-container {
+    font-size: 3rem;
+    font-weight: bold;
+    min-height: 150px;
+    text-shadow: 0 0 20px rgba(57, 197, 187, 0.7);
+}
+
+#song-info {
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    opacity: 0.6;
+    margin-bottom: 30px;
+}
+
+#play-btn {
+    padding: 15px 40px;
+    background: transparent;
+    color: #39C5BB;
+    border: 2px solid #39C5BB;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#play-btn:hover:not(:disabled) {
+    background: #39C5BB;
+    color: #010409;
+    box-shadow: 0 0 30px #39C5BB;
+}
+
+#media {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 200px;
+    height: 112px;
+    opacity: 0.2; /* Casi invisible para no romper la estética */
+}
